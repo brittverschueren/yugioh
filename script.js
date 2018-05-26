@@ -15,6 +15,15 @@ window.onload = function () {
         lifepoints: 8000
     };
 
+    var otherPlayerStorage = window.localStorage.getItem('history-' + otherPlayer);
+    var otherPlayerState = (otherPlayerStorage && JSON.parse(otherPlayerStorage)) || {
+        monstercards: [0, 0, 0, 0, 0],
+        spell: [0, 0, 0, 0, 0],
+        lifepoints: 8000
+    };
+
+    document.getElementById('player-' + otherPlayer + '-lp').innerHTML = ' (' + otherPlayerState.lifepoints + ')';
+
     document.querySelectorAll('.all-counters>.counter-container:nth-of-type(1)>.counter-count').forEach(function (element, index) {
         element.querySelector('.plus').addEventListener('click', function () {
             state.monstercards[index]++;
@@ -41,6 +50,7 @@ window.onload = function () {
         var monster = document.querySelectorAll('.all-counters>.counter-container:nth-of-type(1)>.counter-count>.counter-card>p');
         var spell = document.querySelectorAll('.all-counters>.counter-container:nth-of-type(2)>.counter-count>.counter-card>p');
         var total = document.querySelector('.total');
+        var lp = document.getElementById('player-' + player + '-lp').innerHTML = ' (' + state.lifepoints + ')'
 
         monster.forEach(function (element, index) {
             element.innerHTML = state.monstercards[index];
