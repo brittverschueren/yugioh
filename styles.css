@@ -1,0 +1,191 @@
+html {
+    background-color: #975727;
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently
+                          supported by Chrome and Opera */
+    font-family: 'Lato', sans-serif;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.keypad-container {
+    text-align: center;
+    display: block;
+    width: 49vw;
+    float: right;
+}
+.keypad {
+    overflow: hidden;
+    display: inline-block;
+}
+
+/*
+.keypad.keypad-one {
+    transform: rotate(90deg);
+}
+
+.keypad.keypad-two {
+    transform: rotate(270deg);
+}
+*/
+
+.keypad>.row {
+    width: 100%;
+    white-space: nowrap;
+    font-size: 0;
+    height: 9.5vw;
+    vertical-align: middle;
+    line-height: 10vw;
+}
+
+.keypad>.row>.total {
+    font-size: 3rem;
+    width: 20vw;
+    display: inline-block;
+    text-align: center;
+    background: #423024;
+    color: white;
+    font-weight: 700;
+    overflow: hidden;
+}
+.active{
+    background:white;
+    color:#C09A7D;
+}
+.keypad>.row>.key {
+    font-size: 3rem;
+    width: 10vw;
+    display: inline-block;
+    text-align: center;
+    background: #423024;
+    color: white;
+    overflow: hidden;
+    box-shadow: 1px 1px 10px white;
+}
+
+.container {
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+ul li {
+    list-style: none;
+    display: inline-block;
+    color: #fff;
+    width: 49%;
+    padding: 15px 0px;
+    text-align: center;
+    background: #C09A7D;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+ul a {
+    text-decoration: none;
+}
+
+.all-counters {
+    float: left;
+    width: 50vw;
+}
+
+.counter-container {
+    text-align: right;
+    display: block;
+    width: 50vw;
+}
+.counter-container:nth-child(2) {
+    margin-top: 15px;
+}
+.counter-count {
+    width: 15%;
+    height: 15vh;
+    display: inline-block;
+    margin: 1%;
+}
+
+.counter-count p {
+    font-size: 25px;
+    color: #fff;
+    text-align: center;
+    margin: 0px;
+}
+
+.counter-count .counter-card p {
+    line-height: 15vh;
+    font-size: 25px;
+}
+
+.counter-count .plus,
+.counter-count .minus {
+    padding: 10px;
+    background: #C09A7D;
+    cursor: pointer;
+}
+
+.counter-card {
+    background-image: url('images/counterbackground.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 15vh;
+}
+.dobbelsteen{
+    margin-left:50px;
+}
+.dobbelsteen .button,
+.dobbelsteen .result{
+    width: 33%;
+    float: left;
+    margin-top: 20px;
+    font-size: 30px;
+    text-align: center;
+    cursor:pointer;
+}
+.button p {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    background: #C09A7D;
+    padding: 10px;
+}
+.result p{
+    padding:10px;
+    color:#fff;
+    background:#C09A7D;
+    width:50%;
+    margin-left:auto;
+    margin-right:auto;
+}
+/* HOME */
+
+.logo {
+    text-align:center;
+    padding:50px;
+}
+.start-button{
+    text-align:center;
+}
+.start-button a{
+    font-size:30px;
+    font-weight:600;
+    padding:15px;
+    border-radius: 20px;
+    background:#C09A7D;
+    text-decoration:none;
+    color:unset;
+}
