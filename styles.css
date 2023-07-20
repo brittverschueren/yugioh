@@ -14,13 +14,17 @@ html {
     /* Non-prefixed version, currently
                           supported by Chrome and Opera */
     font-family: 'Lato', sans-serif;
-    touch-action: manipulation;
+    
+    background:red;
 }
 
 html,
 body {
     padding: 0;
     margin: 0;
+    touch-action: manipulation;
+    height:100vh;
+    width:100vw;
 }
 
 .keypad-container {
