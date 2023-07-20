@@ -1,5 +1,6 @@
 html {
-    background-color: #975727;
+    /*background-color: #975727;*/
+    background-color:red;
     -webkit-touch-callout: none;
     /* iOS Safari */
     -webkit-user-select: none;
@@ -14,8 +15,6 @@ html {
     /* Non-prefixed version, currently
                           supported by Chrome and Opera */
     font-family: 'Lato', sans-serif;
-    
-    background:red;
 }
 
 html,
